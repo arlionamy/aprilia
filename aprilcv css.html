@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprilia Rosyana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Aprilia Rosyana</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="toggleSection('about')">Tentang Saya</a></li>
+                <li><a href="#" onclick="toggleSection('contact')">Kontak</a></li>
+                <li><a href="#" onclick="toggleSection('experience')">Pengalaman</a></li>
+                <li><a href="#" onclick="toggleSection('education')">Pendidikan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="hidden">
+        <h2>Tentang Saya</h2>
+        <img src="gambar/22ap.jpg" alt="Foto Profil" class="profile-pic">
+        <p>*Nama* : Aprilia Rosyana</p>
+        <p>*Deskripsi* :
+            Saya adalah siswi dari SMK N 1 WONOSOBO, berusia 17 tahun.
+            Saya merupakan siswa SMK jurusan Teknik Jaringan Komputer 
+            dengan minat besar dalam jaringan komputer.
+            Terampil dalam konfigurasi jaringan, Debian, dan crimping.
+            Saya mampu bekerja dalam tim, berkomunikasi dengan baik, 
+            dan selalu siap belajar hal baru untuk meningkatkan keterampilan, 
+            baik di dunia IT maupun bidang lain yang berkaitan dengan pengembangan diri dan teknologi modern. 
+        </p>
+    </section>
+
+    <section id="contact" class="hidden">
+        <h2>Kontak</h2>
+        <p>Email: apriliarosiana325@gmail.com</p>
+        <p>Telepon: +62 831-1976-6712</p>
+        <p>Instagram:<a href="https://instagram.com/arl___rz" target="_blank">@arl___rz</a></p>
+        <p>YouTube: <a href="https://youtube.com/@ApriliaRosiana-f1b" target="_blank">ApriliaRosiana-f1b</a></p>
+    <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+</section>
+    </section>
+
+    <section id="experience" class="hidden">
+        <h2>Pengalaman</h2>
+        <ul>
+            <li>Praktik Membuat dan Menguji Jaringan 
+                Menyusun Kabel LAN (Straight dan Crossover)</li>
+            <li>Installasi dan Konfigurasi Sistem Operasi
+                Menginstall Windows dan Linux
+                Konfigurasi Server</li>
+             <li>Praktik Keamanan Jaringan dan Ethical Hacking
+                Belajar tentang Keamanan Siber</li>  
+                <h2>keterampilan</h2> 
+                <li>trampil dalam bekerja</li>
+                <li>tanggungjawab</li>
+        </ul>
+    </section>
+
+    <section id="education" class="hidden"> 
+        <h2>Pendidikan</h2>
+        <ul>
+            <li>SD N 2 Sendangsari (2015 - 2020)</li>
+            <li>SMP N 3 Garung (2021-2023)</li>
+            <li>SMK N 1 Wonosobo (2024-2026) jurusan: TKJ Teknik Jaringan Komputer</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aprilia. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+    header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+        background-color: #575757;
+    }
+
+    section {
+        background: white;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-pic {
+        display: block;
+        margin: 0 auto 15px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+
+<script>
+    function toggleSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.add('hidden');
+        });
+
+        const section = document.getElementById(sectionId);
+        section.classList.remove('hidden');
+    }
+</script> 
